@@ -1,0 +1,73 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ENCRYPTION"
+            android:layout_marginLeft="70dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#159fc0"
+            android:id="@+id/ENCRYPTION"
+             />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_enter_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/enter_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:hint="Enter Message" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_enter_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/enter_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:hint="Enter Key Formula" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button android:id="@+id/encrypt_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ENCRYPT"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="60dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
